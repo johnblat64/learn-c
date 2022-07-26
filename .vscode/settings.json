@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stddef.h": "c",
+        "type_traits": "cpp",
+        "dirent.h": "c",
+        "stdio.h": "c"
+    }
+}
