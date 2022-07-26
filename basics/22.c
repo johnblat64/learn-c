@@ -1,20 +1,25 @@
-// PASSING POINTERS TO FUNCTIONS
+// STRUCTS
+// 
 
 #include <stdio.h>
 
+struct Point {
+    float x;
+    float y;
+};
 
-void set_int_to_zero(int *x)
-{
-    *x = 0;
-}
 
 
-void main()
-{
-    int x = 5;
-    printf("x before call: %d\n", x);
 
-    set_int_to_zero(&x);
+int main(){
 
-    printf("x after call:  %d\n", x);
+    struct Point pt1;
+    pt1.x = 5.0f;
+    pt1.y = 10.0f;
+
+
+    struct Point pt2 = {5.0f, 10.0f};
+
+    printf("pt1.x = %f, pt.y = %f\n", pt1.x, pt2.y);
+
 }

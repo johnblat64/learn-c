@@ -1,0 +1,29 @@
+{
+    "tasks": [
+                           
+        {
+            "type": "cppbuild",
+            "label": "Build Task",
+            "command": "/usr/bin/clang-10",
+            "args": [
+                "-g",
+                "-std=c99",
+                "${workspaceFolder}/basics/26.c",
+                "-o",
+                "${workspaceFolder}/basics/bin/26"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by Debugger"
+        }
+    ],
+    "version": "2.0.0"
+}

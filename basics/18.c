@@ -1,17 +1,13 @@
-// POINTER INTRO
+// TYPEDEFS
 
-#include <stdio.h>
+typedef int i32;
+typedef char byte;
+typedef char i8;
 
-void main(){
-    int a = 10;
 
-    /**
-     * 
-     *    memory: ***********a*****
-     *                       ^ ptr_to_a 
-     */
+int main(){
+    i32 i32_var = 5;
+    byte byte_var = 4;
+    i8 i8_var = 2;
 
-    int *ptr_to_a = &a;
-
-    printf("ptr_to_a: %p\n", (void *)ptr_to_a);
 }

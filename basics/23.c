@@ -1,30 +1,22 @@
-// PASSING ARRAYS TO FUNCTIONS
+// STRUCTS 2 - ITS COMMON TO TYPEDEF THEM
 
-#include <stdio.h>
+typedef struct PointF PointF;
 
-void print_array_elements(int *array, int array_length)
-{
-    printf("\n");
-
-    for(int i = 0; i < array_length; i++)
-    {
-        printf("array[%d]: %d\n", i, array[i]);
-    }
-
-    printf("\n");
-}
+struct PointF {
+    float x;
+    float y;
+};
 
 
-void square_all_elements(int *in_array, int *out_array, int array_length)
-{
-    for(int i = 0; i < array_length; i++)
-    {
-        out_array[i] = in_array[i] * in_array[i];
-    }
-}
+typedef struct PointD {
+    double x;
+    double y;
+} PointD;
 
 
-void main()
-{
+
+int main(){
+    PointF ptf;
+    PointD ptd;
 
 }

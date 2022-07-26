@@ -1,23 +1,11 @@
-// CASTING
+// MACROS - DEFINING IN COMPILER
+
 #include <stdio.h>
 
-void main(){
+// gcc 17.c -DSOME_MACRO=5 -o bin/17
 
-    int int_var = 50;
-    char char_var = 5;
-    float float_var = 5.5f;
+int main(){
+    int x = SOME_MACRO;
 
-    // implicit casting
-    int_var = char_var;
-    char_var = int_var;
-
-    // explicit casting
-    float_var = (float)char_var;
-    int_var = (int)float_var;
-    char_var = (char)int_var;
-
-    // example
-    int another_int_var = (int)5.76f;
-
-    printf("another_int_var: %d\n", another_int_var);
+    printf("x = %d\n", x);
 }
