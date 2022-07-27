@@ -18,10 +18,9 @@ int size_of_string(char array[64]){
 }
 
 void main(){
-    // not a c style string
-    char char_array[] = {'h', 'e', 'l', 'l', 'o'};
+
     
-    char char_array_string[] = {'h', 'e', 'l', 'l', 'o', '\0'};
+    char *char_array_string = "hello";
 
     int size = size_of_string(char_array_string);
 
@@ -32,10 +31,7 @@ void main(){
     int size2 = size_of_string(char_array_2);
 
     printf("size2: %d\n", size2);
-    
-    // size of the char array without '\0' will be undefined
-    int size3 = size_of_string(char_array);
-    printf("size3: %d\n", size3);
+
 
 
 
