@@ -23,6 +23,52 @@
                 "isDefault": true
             },
             "detail": "Generated task by Debugger"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build mem 1",
+            "command": "/usr/bin/clang-10",
+            "args": [
+                "-g",
+                "-std=c99",
+                "${workspaceFolder}/mem/1.c",
+                "-o",
+                "${workspaceFolder}/mem/bin/1"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by Debugger"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build current file",
+            "command": "/usr/bin/clang-10",
+            "args": [
+                "-g",
+                "-std=c99",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/mem/bin/a.out"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by Debugger"
         }
     ],
     "version": "2.0.0"

@@ -1,9 +1,25 @@
-#include <stdio.h>
+//
+// STRING UTILS
+//
 
+#include <stdio.h>
+#include <string.h>
 
 int main()
 {
-    char *name = "Steve Dave";
+    char *first_name = "Steve";
+    char *last_name = "Martin";
 
-    printf("%s\n", name);
+    char *fullname;
+
+    size_t first_name_str_len = strlen(first_name);
+
+    strncpy(fullname, first_name, first_name_str_len);
+
+    strncat(fullname, last_name, strlen(last_name));
+
+    int strings_equal = strncmp(first_name, last_name);
+
+    
+
 }

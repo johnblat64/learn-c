@@ -5,7 +5,7 @@
 
 // can take an array of max size 64
 
-int size_of_string(char array[64]){
+int size_of_string(char *array){
     int current_index = 0;
     int current_character = array[current_index];
     

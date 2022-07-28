@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/frog/repos/learn-c'
+make: Leaving directory '/home/frog/repos/learn-c'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

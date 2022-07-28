@@ -35,5 +35,47 @@
             "preLaunchTask": "Build Task",
             "miDebuggerPath": "/usr/bin/gdb"
         },
+        {
+            "name": "mem 1 debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/mem/bin/1",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build mem 1",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "debug current mem file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/mem/bin/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build current file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
     ]
 }
