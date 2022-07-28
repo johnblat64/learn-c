@@ -2,6 +2,9 @@
 // LINEAR ALLOCATOR
 // ALLOCATING MEMORY FROM A BACKING MEMORY ARRAY
 
+// other names for this are
+// arena or region based memory allocator
+
 #include <stddef.h>
 #include <stdio.h>
 

@@ -5,6 +5,7 @@
         "dirent.h": "c",
         "stdio.h": "c",
         "stdlib.h": "c",
-        "pointf.h": "c"
+        "pointf.h": "c",
+        "sdl.h": "c"
     }
 }

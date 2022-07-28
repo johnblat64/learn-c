@@ -1,14 +1,13 @@
-// STANDARD TYPEDEFS
+// TYPEDEFS
 
-#include <stddef.h>
-#include <inttypes.h>
+typedef int i32;
+typedef char byte;
+typedef char i8;
+
 
 int main(){
-    uint8_t a = 5; // unsigned char
-    uint16_t b = 5; // unsigned short
-    uint32_t c = 5; // unsigned int
-    uint64_t d = 5; // unsigned long
-
-    size_t number_of_things = 10; // unsigned long
+    i32 i32_var = 5;
+    byte byte_var = 4;
+    i8 i8_var = 2;
 
 }

@@ -1,28 +1,23 @@
-// STRUCTS
-// 
-
-// look up function pointers if you want to store a function in a struct or variable
-
+// CASTING
 #include <stdio.h>
 
-struct Point 
-{
-    float x;
-    float y;
-};
+void main(){
 
+    int int_var = 50;
+    char char_var = 5;
+    float float_var = 5.5f;
 
+    // implicit casting
+    int_var = char_var;
+    char_var = int_var;
 
+    // explicit casting
+    float_var = (float)char_var;
+    int_var = (int)float_var;
+    char_var = (char)int_var;
 
-int main(){
+    // example
+    int another_int_var = (int)5.76f;
 
-    struct Point pt1;
-    pt1.x = 5.0f;
-    pt1.y = 10.0f;
-
-
-    struct Point pt2 = {5.0f, 10.0f};
-
-    printf("pt1.x = %f, pt.y = %f\n", pt1.x, pt2.y);
-
+    printf("another_int_var: %d\n", another_int_var);
 }

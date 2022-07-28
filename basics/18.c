@@ -1,13 +1,11 @@
-// TYPEDEFS
+// MACROS - DEFINING IN DURING COMPILATION COMMAND
 
-typedef int i32;
-typedef char byte;
-typedef char i8;
+#include <stdio.h>
 
+// gcc 17.c -DSOME_MACRO=5 -o bin/17
 
 int main(){
-    i32 i32_var = 5;
-    byte byte_var = 4;
-    i8 i8_var = 2;
+    int x = SOME_MACRO;
 
+    printf("x = %d\n", x);
 }

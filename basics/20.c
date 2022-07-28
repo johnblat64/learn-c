@@ -1,11 +1,14 @@
-// ARRAY INTRO INTRO
+// STANDARD TYPEDEFS
 
-#define ARRAY_LENGTH 10
+#include <stddef.h>
+#include <inttypes.h>
 
 int main(){
-    int array_name[ARRAY_LENGTH];
+    uint8_t a = 5; // unsigned char
+    uint16_t b = 5; // unsigned short
+    uint32_t c = 5; // unsigned int
+    uint64_t d = 5; // unsigned long
 
-    int array_name_2[ARRAY_LENGTH] = {1,2,3,4,5,6,7,8,9,10};
+    size_t number_of_things = 10; // unsigned long
 
-    int array_name_3[] = {1,2,3,4,5,6,7,8,9,10};
 }

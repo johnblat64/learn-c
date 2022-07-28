@@ -18,7 +18,9 @@ int main()
 
     strncat(fullname, last_name, strlen(last_name));
 
-    int strings_equal = strncmp(first_name, last_name);
+    int strings_equal = strncmp(first_name, last_name, first_name_str_len);
+
+    printf("strings_equal: %d\n", strings_equal);
 
     
 

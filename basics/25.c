@@ -1,30 +1,25 @@
-// POINTER INTRO
+// STRUCTS 2 - ITS COMMON TO TYPEDEF THEM
 
-#include <stdio.h>
+// struct PointF ptf;
+// PointF ptf;
 
-// memory addresses:
+typedef struct PointF PointF;
 
-/**     address      value
- *      --------    -------
- *      0xa0        'a'
- *      0xa1        'b' 
- *      0xa2        1
- *      0xa3        4
- *      .
- *      .
- *      .
- *      0xaf        0
- *      0xb0        0
- *   
- * 
- */
+struct PointF {
+    float x;
+    float y;
+};
 
 
-void main(){
-    int a = 10;
+typedef struct PointD {
+    double x;
+    double y;
+} PointD;
 
 
-    int *ptr_to_a = &a;
 
-    printf("ptr_to_a: %p\n", (void *)ptr_to_a);
+int main(){
+    PointF ptf;
+    PointD ptd;
+
 }

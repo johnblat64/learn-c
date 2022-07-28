@@ -1,19 +1,7 @@
-// PREPROCESSOR INTRODUCTION
+// MACRO EXAMPLE
 
-#include <stdio.h>
-
-#define MACRO_1 5
-
-#define MACRO_2 (5 < 7)
-
-#define MACRO_3 "hello\n"
-
+#define MY_MACRO 5
 
 int main(){
-    int x = MACRO_1;
-    int a = MACRO_2;
-
-    printf("x = %d\n", x);
-    printf("a = %d\n", a);
-    printf(MACRO_3);
+    int x = MY_MACRO;
 }
