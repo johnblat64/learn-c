@@ -1,22 +1,28 @@
-// STRUCTS 2 - ITS COMMON TO TYPEDEF THEM
+// STRUCTS
+// 
 
-typedef struct PointF PointF;
+// look up function pointers if you want to store a function in a struct or variable
 
-struct PointF {
+#include <stdio.h>
+
+struct Point 
+{
     float x;
     float y;
 };
 
 
-typedef struct PointD {
-    double x;
-    double y;
-} PointD;
-
 
 
 int main(){
-    PointF ptf;
-    PointD ptd;
+
+    struct Point pt1;
+    pt1.x = 5.0f;
+    pt1.y = 10.0f;
+
+
+    struct Point pt2 = {5.0f, 10.0f};
+
+    printf("pt1.x = %f, pt.y = %f\n", pt1.x, pt2.y);
 
 }

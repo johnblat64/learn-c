@@ -57,10 +57,10 @@
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
-            "name": "debug current mem file",
+            "name": "debug current file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/mem/bin/a.out",
+            "program": "${fileDirname}/a.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

@@ -50,13 +50,13 @@
         {
             "type": "cppbuild",
             "label": "Build current file",
-            "command": "/usr/bin/clang-10",
+            "command": "/usr/bin/gcc",
             "args": [
                 "-g",
                 "-std=c99",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/mem/bin/a.out"
+                "${fileDirname}/a.out"
             ],
             "options": {
                 "cwd": "/usr/bin"

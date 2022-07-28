@@ -1,8 +1,7 @@
-// multiple arguments in printf
+// multiple format specifiers in printf
 
 #include <stdio.h>
 
-// what are %x called
 
 void main(){
 

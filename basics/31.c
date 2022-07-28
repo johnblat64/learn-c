@@ -1,4 +1,4 @@
-// MULTI DIMENSIONAL ARRAY MEMORY LAYOUT
+// MULTI DIMENSIONAL ARRAY
 
 #include <stdio.h>
 
@@ -12,35 +12,15 @@ void main(){
         {12,22,32,42}
     };
 
-    int *array_ptr = &array2d[0][0];
 
-    int value_at_idx_7 = array_ptr[7];
-
-    printf("value_at_idx_7 = %d\n", value_at_idx_7);
-
-
-
-    int total_num_elements = NUM_ROWS * NUM_COLS;
-
-    for(int i = 0; i < total_num_elements; i++)
+    for(int row = 0; row < NUM_ROWS; row++)
     {
-        printf("array_ptr[%d] = %d\n", i, array_ptr[i]);
+        for(int col = 0; col < NUM_COLS; col++)
+        {
+            int item = array2d[row][col];
+
+            printf("[%d][%d] = %d, ", row, col, item);
+        }
+        printf("\n");
     }
-
-    // MORAL OF THE STORY:
-    /**
-     * Although it appears to be
-     * 
-     *    X X X X
-     *    X X X X
-     *    X X X X 
-     * 
-     * 
-     * It isactually laid out in memory like
-     *    X X X X X X X X X X X X 
-     * 
-     *    ^       ^       ^
-     *    
-     */
-
 }

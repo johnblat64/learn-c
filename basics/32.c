@@ -1,52 +1,46 @@
-// LOGICAL MULTI DIMENSIONAL ARRAY
+// MULTI DIMENSIONAL ARRAY MEMORY LAYOUT
 
 #include <stdio.h>
-
-int array2d_access(int *array, int row, int col, int num_cols)
-{
-    int index = (row * num_cols) + col;
-    int value = array[index];
-    return value;
-}
-
-void array2d_set(int *array, int row, int col, int num_cols, int value)
-{
-    int index = (row * num_cols) + col;
-    array[index] = value;
-}
-
 
 #define NUM_ROWS 3
 #define NUM_COLS 4
 
-int main()
-{   
-    // 3 * 4 = 12
-    int array2d[NUM_ROWS * NUM_COLS] = {0};
+void main(){
+    int array2d[NUM_ROWS][NUM_COLS] = {
+        {10,20,30,40},
+        {11,21,31,41},
+        {12,22,32,42}
+    };
+
+    int *array_ptr = &array2d[0][0];
+
+    int value_at_idx_7 = array_ptr[7];
+
+    printf("value_at_idx_7 = %d\n", value_at_idx_7);
 
 
 
+    int total_num_elements = NUM_ROWS * NUM_COLS;
 
-    for(int row = 0; row < 3; row++)
+    for(int i = 0; i < total_num_elements; i++)
     {
-        for(int col = 0; col < 4; col++)
-        {
-            int value = (row * 10) + col;
-            array2d_set(array2d, row, col, 4, value);
-        }
+        printf("array_ptr[%d] = %d\n", i, array_ptr[i]);
     }
 
-
-
-
-    for(int row = 0; row < 3; row++)
-    {
-        for(int col = 0; col < 4; col++)
-        {
-            int value = array2d_access(array2d, row, col, 4);
-            printf("(row = %d, col = %d) = %d\n", row, col, value);
-        }
-    }
-
+    // MORAL OF THE STORY:
+    /**
+     * Although it appears to be
+     * 
+     *    X X X X
+     *    X X X X
+     *    X X X X 
+     * 
+     * 
+     * It isactually laid out in memory like
+     *    X X X X X X X X X X X X 
+     * 
+     *    ^       ^       ^
+     *    
+     */
 
 }

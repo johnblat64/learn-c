@@ -3,6 +3,8 @@
         "stddef.h": "c",
         "type_traits": "cpp",
         "dirent.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "pointf.h": "c"
     }
 }

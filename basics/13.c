@@ -42,7 +42,7 @@ void main(){
     // bitwise operations against self
 
     int x = 15;
-    x |= 32;
+    x |= 32; // x = x | 32
 
     printf("x: %x\n", x);
 }

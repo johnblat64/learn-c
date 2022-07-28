@@ -11,7 +11,8 @@ void main(){
     // range = -128 to 127 OR 0 to 255
 
     char char_val = 100; 
-    char char_val1 = 1000;
+    char char_val1 = 130; // will end up as -126 bc the value will "wrap back around"
+    
     printf("char_val1: %d\n", char_val1);
 
     //

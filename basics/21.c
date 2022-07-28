@@ -1,23 +1,55 @@
-// CASTING
+// ARRAYS INTRO
+
 #include <stdio.h>
 
+// what if we want to print arrays of any size???
+
+void print_array_10(int array[10])
+{
+    printf("\n-------------------------\n");
+    
+    for(int i = 0; i < 10; i++)
+    {
+        printf("array[%d]: %d\n", i, array[i]);
+    }
+
+    printf("------------------------\n");
+}
+
+
+
 void main(){
+    // initialize array with data
+    int array_initialized[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
-    int int_var = 50;
-    char char_var = 5;
-    float float_var = 5.5f;
+    int array_uninitialized[10];
 
-    // implicit casting
-    int_var = char_var;
-    char_var = int_var;
+    print_array_10(array_initialized);
+    print_array_10(array_uninitialized);
 
-    // explicit casting
-    float_var = (float)char_var;
-    int_var = (int)float_var;
-    char_var = (char)int_var;
+    int array_zeroed_out[10] = {0};
+    print_array_10(array_zeroed_out);
 
-    // example
-    int another_int_var = (int)5.76f;
+    int array_initialized_with_100[10] = {100};
+    print_array_10(array_initialized_with_100);
 
-    printf("another_int_var: %d\n", another_int_var);
+    
+    // automatic length detection initialization
+    int array[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+
+    // sizeof array
+    printf("sizeof array: %ld\n", sizeof array);
+
+
+    // array access
+
+    //get
+    int val_at_5 = array[5];
+
+    //set
+    array[2] = 10000;
+    
+    print_array_10(array);
+    
+
 }
