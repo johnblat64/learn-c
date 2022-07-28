@@ -1,4 +1,6 @@
 // floating point number types
+
+// get info about percisioin of float numbers
 #include <stdio.h>
 
 void main(){
@@ -7,7 +9,7 @@ void main(){
     //
     // size = 4 bytes
     // range = 1.2E-38 to 3.4E+38
-    float float_var = 5.6792;
+    float float_var = 5.673492;
 
     //
     // DOUBLE

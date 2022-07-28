@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void main(){
+int main(){
     int int_var = 10;
 
     int *int_var_ptr = &int_var;
@@ -14,5 +14,5 @@ void main(){
     printf("dereferenced_value: %d\n", dereferenced_value); 
     printf("*int_var_ptr: %d\n", *int_var_ptr);
 
-
+    return 0;
 }

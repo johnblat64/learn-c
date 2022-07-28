@@ -1,5 +1,7 @@
 // integer variable types
 
+#include <stdio.h>
+
 void main(){
     
     //
@@ -9,6 +11,8 @@ void main(){
     // range = -128 to 127 OR 0 to 255
 
     char char_val = 100; 
+    char char_val1 = 1000;
+    printf("char_val1: %d\n", char_val1);
 
     //
     // SHORT
@@ -24,7 +28,7 @@ void main(){
     // size = 4 bytes
     // range = -2,147,483,648 to 2,147,483,647
 
-    int int_val = 100; // 4 bytes
+    int int_val = 100; 
 
     //
     // LONG
@@ -32,6 +36,6 @@ void main(){
     // size = 8 bytes
     // range = -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 
-    long long_val = 900; // 8 bytes
+    long long_val = 900; 
 
 }

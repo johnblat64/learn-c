@@ -28,7 +28,7 @@ void main(){
     int array_zeroed_out[10] = {0};
     print_array_10(array_zeroed_out);
 
-    int array_initialized_with_100[10] = {100};
+    int array_initialized_with_100[10] = {100, 200};
     print_array_10(array_initialized_with_100);
 
     
